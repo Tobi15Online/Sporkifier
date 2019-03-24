@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Sporkifier",
+  "version": "1.0",
+  "description": "Sporkifies GitHub!",
+  "author":"Tobi ʘ‿↼",
+  "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "48": "icons/48.png"
+   },
+  "content_scripts": [
+    {
+      "matches": [ "*://github.com/*" ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
